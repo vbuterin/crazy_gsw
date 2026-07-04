@@ -10,7 +10,7 @@ cost, matrix GSW computes a full `k x k` matrix product at an overhead of
 `8 * qbits^2` mod-muls -- **independent of k** -- while basic GSW pays
 `N^3 * qbits^2` and packed GSW pays `8 * k^2 * qbits^2`.*
 
-**NOTE: this is a novel construction, still awaiting and welcoming serious cryptanalysis.**
+**Edit: turns out that this is a re-invention of https://security-kouza.github.io/paper/IEICE2016_hiromasa.pdf**
 
 Three reference implementations accompany this document, structured so that
 diffing them shows only the meaningful changes (all three now share an
